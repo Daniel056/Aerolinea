@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2017 4:34:40 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.aerolinea.domain.Ruta" table="Ruta" catalog="Aerolinea" optimistic-lock="version">
+        <id name="idRuta" type="java.lang.Integer">
+            <column name="idRuta" />
+            <generator class="identity" />
+        </id>
+        <property name="pkfkHorario" type="int">
+            <column name="idHorario" not-null="true" />
+        </property>
+        <property name="lugarDestino" type="string">
+            <column name="lugarDestino" length="45" />
+        </property>
+        <property name="lugarSalida" type="string">
+            <column name="lugarSalida" length="45" />
+        </property>
+        <property name="precio" type="java.lang.Double">
+            <column name="precio" precision="22" scale="0" />
+        </property>
+        <property name="duracion" type="string">
+            <column name="duracion" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

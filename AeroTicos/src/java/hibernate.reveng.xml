@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="Aerolinea"/>
+  <table-filter match-name="usuario"/>
+  <table-filter match-name="vuelo"/>
+  <table-filter match-name="horario"/>
+  <table-filter match-name="avion"/>
+  <table-filter match-name="reserva"/>
+  <table-filter match-name="asiento"/>
+  <table-filter match-name="ruta"/>
+</hibernate-reverse-engineering>

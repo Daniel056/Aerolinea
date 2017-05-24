@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2017 4:34:40 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.aerolinea.domain.Reserva" table="Reserva" catalog="Aerolinea" optimistic-lock="version">
+        <id name="idReserva" type="java.lang.Integer">
+            <column name="idReserva" />
+            <generator class="identity" />
+        </id>
+        <property name="pkfkUsuario" type="int">
+            <column name="idUsuario" not-null="true" />
+        </property>
+        <property name="pkfkVuelo" type="int">
+            <column name="idVuelo" not-null="true" />
+        </property>
+        <property name="canAsientosReservados" type="java.lang.Integer">
+            <column name="canAsientosReservados" />
+        </property>
+        <property name="numeroTarjeta" type="string">
+            <column name="numeroTarjeta" length="45" />
+        </property>
+        <property name="monto" type="java.lang.Double">
+            <column name="monto" precision="22" scale="0" />
+        </property>
+        <property name="pkfkAsiento" type="int">
+            <column name="idAsiento" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

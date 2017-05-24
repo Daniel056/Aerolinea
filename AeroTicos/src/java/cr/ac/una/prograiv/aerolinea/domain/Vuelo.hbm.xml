@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2017 4:34:40 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.aerolinea.domain.Vuelo" table="Vuelo" catalog="Aerolinea" optimistic-lock="version">
+        <id name="idVuelo" type="java.lang.Integer">
+            <column name="idVuelo" />
+            <generator class="identity" />
+        </id>
+        <property name="pkfkAvion" type="int">
+            <column name="idAvion" not-null="true" />
+        </property>
+        <property name="pkfkRuta" type="int">
+            <column name="idRuta" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

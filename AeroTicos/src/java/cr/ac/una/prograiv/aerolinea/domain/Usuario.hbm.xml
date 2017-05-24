@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2017 4:34:40 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.aerolinea.domain.Usuario" table="Usuario" catalog="Aerolinea" optimistic-lock="version">
+        <id name="idUsuario" type="java.lang.Integer">
+            <column name="idUsuario" />
+            <generator class="increment" />
+        </id>
+        <property name="nombUsuario" type="string">
+            <column name="nombUsuario" length="45" />
+        </property>
+        <property name="constrasena" type="string">
+            <column name="constrasena" length="45" />
+        </property>
+        <property name="apellidos" type="string">
+            <column name="apellidos" length="45" />
+        </property>
+        <property name="correoElectronico" type="string">
+            <column name="correoElectronico" length="45" />
+        </property>
+        <property name="fechaNacimiento" type="date">
+            <column name="fechaNacimiento" length="10" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="45" />
+        </property>
+        <property name="telefonoTrabajo" type="string">
+            <column name="telefonoTrabajo" length="45" />
+        </property>
+        <property name="celular" type="string">
+            <column name="celular" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2017 4:34:40 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.aerolinea.domain.Asiento" table="Asiento" catalog="Aerolinea" optimistic-lock="version">
+        <id name="idAsiento" type="java.lang.Integer">
+            <column name="idAsiento" />
+            <generator class="identity" />
+        </id>
+        <property name="pkfkReserva" type="int">
+            <column name="idReserva" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
